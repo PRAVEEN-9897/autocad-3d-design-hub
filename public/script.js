@@ -22,6 +22,7 @@ contactForm.addEventListener("submit", async function(e){
     e.preventDefault();
 
     const formData = new FormData(contactForm);
+    console.log(data);
 
     const data = {
 
