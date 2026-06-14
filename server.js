@@ -85,27 +85,27 @@ const upload = multer({ storage: storage });
 // await newContact.save();
 
 // res.send("Message Sent Successfully");
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.post("/contact", async (req, res) => {
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+// app.post("/contact", async (req, res) => {
 
-    try {
+//     try {
 
-        const newContact = new Contact(req.body);
+//         const newContact = new Contact(req.body);
 
-        await newContact.save();
+//         await newContact.save();
 
-        res.send("SUCCESS");
+//         res.send("SUCCESS");
 
-    } catch (error) {
+//     } catch (error) {
 
-        console.log("ERROR =", error);
+//         console.log("ERROR =", error);
 
-        res.send(error.message);
+//         res.send(error.message);
 
-    }
+//     }
 
-});
+// });
 
 /* MIDDLEWARE */
 
