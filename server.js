@@ -51,40 +51,25 @@ const upload = multer({ storage: storage });
 // Email notification
 
 
-const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
+app.post("/contact", async (req, res) => {
+
+    try {
+
+        const newContact = new Contact(req.body);
+
+        await newContact.save();
+
+        res.send("SUCCESS");
+
+    } catch (error) {
+
+        console.log("ERROR =", error);
+
+        res.send(error.message);
+
     }
+
 });
-
-transporter.verify(function (error, success) {
-    if (error) {
-        console.log("MAIL ERROR:", error);
-    } else {
-        console.log("MAIL SERVER READY");
-    }
-});
-
-// app.get("/mailtest", async (req, res) => {
-//     try {
-//         await transporter.sendMail({
-//             from: process.env.EMAIL_USER,
-//             to: process.env.EMAIL_USER,
-//             subject: "Test Mail",
-//             text: "Hello"
-//         });
-
-//         res.send("Mail Sent");
-//     } catch (err) {
-//         console.log(err);
-//         res.send(err.message);
-//     }
-// });
-await newContact.save();
-
-res.send("Message Sent Successfully");
 
 
 /* MIDDLEWARE */
