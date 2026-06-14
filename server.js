@@ -3,7 +3,7 @@ console.log(process.env.EMAIL_USER);
 const multer = require("multer");
 const nodemailer = require("nodemailer");
 const path = require("path");
-const Contact = require("./models/Contact");
+const Contact = require("./models/contact");
 const Course = require("./models/course");
 console.log("SERVER FILE =", __filename);
 const Note = require("./models/Note");
