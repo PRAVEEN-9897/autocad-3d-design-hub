@@ -607,6 +607,15 @@ res.send("Lesson Added");
 
 
 // contact route...
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.post("/contact", async (req, res) => {
+
+    console.log("BODY =", req.body);
+
+    res.send(JSON.stringify(req.body));
+
+});
 
 app.post("/contact", async (req, res) => {
 
