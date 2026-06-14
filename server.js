@@ -586,8 +586,6 @@ res.send("Lesson Added");
 // contact route...
 
 app.post("/contact", async (req, res) => {
-    console.log("CONTACT ROUTE HIT");
-    res.send("Route Working");
 
     console.log("BODY =", req.body);
 
@@ -628,7 +626,6 @@ app.post("/contact", async (req, res) => {
 
     }
 });
-
 
 
 
