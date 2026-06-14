@@ -468,11 +468,14 @@ textarea{
      .project-slider{
         flex-direction:column !important;
         overflow-x:hidden !important;
+       
     }
 
     .project-card{
         min-width:unset !important;
         width:90% !important;
+         display: flex;
+        justify-content: center;
     }
 
 
