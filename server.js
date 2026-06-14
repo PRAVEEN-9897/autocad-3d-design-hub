@@ -13,7 +13,7 @@ const express = require("express");
 const app = express();
 
 const PORT = process.env.PORT || 3000;
-mongoose.connect("mongodb://praveen:praveen123@ac-iecp8ks-shard-00-00.cx4wwye.mongodb.net:27017,ac-iecp8ks-shard-00-01.cx4wwye.mongodb.net:27017,ac-iecp8ks-shard-00-02.cx4wwye.mongodb.net:27017/mywebsite?ssl=true&replicaSet=atlas-gyosc6-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect(process.env.MONGODB_URI)
 
 .then(() => {
 
