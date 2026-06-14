@@ -72,6 +72,22 @@ transporter.verify(function (error, success) {
     }
 });
 
+app.get("/mailtest", async (req, res) => {
+    try {
+        await transporter.sendMail({
+            from: process.env.EMAIL_USER,
+            to: process.env.EMAIL_USER,
+            subject: "Test Mail",
+            text: "Hello"
+        });
+
+        res.send("Mail Sent");
+    } catch (err) {
+        console.log(err);
+        res.send(err.message);
+    }
+});
+
 
 /* MIDDLEWARE */
 
