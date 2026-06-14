@@ -599,6 +599,7 @@ app.post("/contact", async (req, res) => {
             phone,
             message
         });
+        console.log("NEW CONTACT =", newContact);
 
         await newContact.save();
 
