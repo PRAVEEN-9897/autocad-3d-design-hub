@@ -466,16 +466,17 @@ textarea{
         max-width: 350px;
     }
      .project-slider{
-        flex-direction:column !important;
-        overflow-x:hidden !important;
-       
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 20px;
+        overflow-x: hidden !important;
     }
 
     .project-card{
-        min-width:unset !important;
-        width:90% !important;
-         display: flex;
-        justify-content: center;
+        width: 90% !important;
+        min-width: unset !important;
+        margin: 0 auto;
     }
 
 
