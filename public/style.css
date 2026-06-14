@@ -465,18 +465,18 @@ textarea{
         width: 90%;
         max-width: 350px;
     }
-     .project-slider{
-        display: flex;
-        flex-direction: column !important;
-        align-items: center;
-        gap: 20px;
-        overflow-x: hidden !important;
+       .project-slider{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+        justify-content:center !important;
     }
 
     .project-card{
-        width: 90% !important;
-        min-width: unset !important;
-        margin: 0 auto;
+        width:90% !important;
+        min-width:unset !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
     }
 
 
