@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocad & 3D Design Hub </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Autocad & 3D Design Hub
+        </div>
+
+        <nav>
+
+            <a href="#" onclick="showSection('home')">Home</a>
+
+            <a href="#" onclick="showSection('about')">About</a>
+
+            <a href="#" onclick="showSection('courses')">Courses</a>
+
+            <a href="#" onclick="showSection('notes')">Notes</a>
+
+            <a href="#" onclick="showSection('contact')">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <!-- HOME -->
+
+    <section id="home" class="section active-section">
+
+        <div class="hero">
+
+            <h1>Learn. Practice. Build. Design.</h1>
+
+<p>
+Learn AutoCAD and SolidWorks through hands-on projects, practical exercises,
+industry-oriented tutorials and downloadable resources.
+
+For students and professionals, we provide complete learning support, while
+for clients and businesses we offer professional 2D drafting, 3D modeling,
+product design, assemblies and engineering design services.
+</p>
+
+        <button onclick="showSection('courses')">
+          Explore Courses
+        </button>
+
+        </div>
+        <section id="services">
+
+    <h2>What We Are Offering</h2>
+
+    <div class="service-slider">
+
+        <div class="service-card">
+            <h3>AutoCAD 2D & 3D Training</h3>
+            <p>Learn AutoCAD from beginner to advanced level with practical 2D drafting and 3D modeling exercises. Gain industry-ready skills through real-world examples and projects.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>AutoCAD Design Services</h3>
+            <p>Need a mechanical, civil, or architectural part designed in AutoCAD? We provide accurate 2D drawings and 3D models based on your requirements.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>SolidWorks Training</h3>
+            <p>Master SolidWorks with hands-on training in part modeling, assemblies, sheet metal, and engineering drawings. Suitable for students and professionals.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>SolidWorks Design Services</h3>
+            <p>Get professional 3D parts, assemblies, and product designs created in SolidWorks. We deliver accurate CAD models ready for manufacturing and prototyping.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Mechanical Part Drafting & Modeling</h3>
+            <p>Provide your machine component requirements, and we will create detailed AutoCAD drawings and models suitable for manufacturing and engineering use.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>CNC Laser Cutting Profiles</h3>
+            <p>Generate CNC laser cutting profiles and production-ready DXF files from AutoCAD drawings. Accurate profiles ensure smooth manufacturing and reduced production time.2</p>
+        </div>
+
+    </div>
+
+</section>
+        
+
+    </section>
+
+    <!-- ABOUT -->
+<section id="about" class="section">
+
+    <div class="about1">
+
+        <div class="about1-content">
+
+            <h2>About AutoCAD & 3D Design Hub</h2>
+
+            <p>
+                AutoCAD & 3D Design Hub is a learning platform dedicated to helping students,
+                engineers and professionals master AutoCAD, SolidWorks and Mechanical Design.
+
+                Our goal is to provide practical learning through tutorials, notes,
+                real-world projects and industry-oriented exercises.
+
+                We also provide professional design services for clients who need
+                2D drawings, 3D models, assemblies, product designs and engineering solutions.
+            </p>
+
+        </div>
+
+    </div>
+    <section id="projects">
+
+   <h2> Client services</h2>
+
+<div class="project-slider">
+
+    <div class="project-card">
+        <img src="Images/Project1.jpeg">
+    </div>
+
+    <div class="project-card">
+        <img src="Images/Project2.jpeg">
+    </div>
+
+    <div class="project-card">
+        <img src="Images/Project3.jpeg">
+    </div>
+
+    <div class="project-card">
+        <img src="Images/Project4.jpeg">
+    </div>
+
+    <div class="project-card">
+        <img src="Images/Project5.jpeg">
+    </div>
+     <div class="project-card">
+        <img src="Images/Project6.jpeg">
+    </div>
+
+    <div class="project-card">
+        <img src="Images/Project7.jpeg">
+    </div>
+
+    <div class="project-card">
+        <img src="Images/Project8.jpeg">
+    </div>
+
+    <div class="project-card">
+        <img src="Images/Project9.jpeg">
+    </div>
+
+    <div class="project-card">
+        <img src="Images/Project10.jpeg">
+    </div>
+    <div class="project-card">
+        <img src="Images/Project11.jpeg">
+    </div>
+
+    <div class="project-card">
+        <img src="Images/Project12.jpeg">
+    </div>
+    <div class="project-card">
+        <img src="Images/Project13.jpeg">
+    </div>
+
+    <div class="project-card">
+        <img src="Images/Project14.jpeg">
+    </div>
+    <div class="project-card">
+        <img src="Images/Project15.jpeg">
+    </div>
+    <div class="project-card">
+        <img src="Images/Project16.jpeg">
+    </div>
+    <div class="project-card">
+        <img src="Images/Project17.jpeg">
+    </div>
+    <div class="project-card">
+        <img src="Images/Project18.jpeg">
+    </div>
+
+</div>
+</section>
+
+</section>
+
+    <!-- COURSES -->
+
+   <section id="courses" class="section">
+
+    <div class="courses">
+
+        <h2 style="color: azure;">
+            My Courses
+        </h2>
+
+        <div
+            class="course-container"
+            id="coursesContainer"
+        >
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- NOTES -->
+    
+
+    <section id="notes" class="section">
+
+        <div class="notes">
+
+            <h2 style="color: azure;">Notes & PDFs</h2>
+
+            <<div class="notes-container" id="notesContainer">>
+
+                <div class="note-card">
+                    <h3>HTML Notes</h3>
+                    <button>Download PDF</button>
+                </div>
+
+                <div class="note-card">
+                    <h3>CSS Notes</h3>
+                    <button>Download PDF</button>
+                </div>
+
+            </div>
+           
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="section">
+
+        <div class="contact-box">
+
+            <p>
+Need AutoCAD or SolidWorks training?
+Need a professional design created for your project?
+
+Contact us today.
+</p>
+
+            <form id="contactForm">
+
+               <input type="text" name="name" placeholder="Enter Name">
+
+                <input type="email" name="email" placeholder="Enter Email">
+                <input type="tel" id="phone" placeholder="Enter Phone Number">
+>
+
+                <textarea name="message" placeholder="Enter Message"></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>AutoCAD & 3D Design Hub</h3>
+            <p>
+               Learn AutoCAD and SolidWorks through hands-on projects, practical exercises, industry-oriented tutorials and downloadable resources. For students and professionals, we provide complete learning support, while for clients and businesses we offer professional 2D drafting, 3D modeling, product design, assemblies and engineering design services.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+
+           <a href="#" onclick="showSection('home')">Home</a><br>
+
+            <a href="#" onclick="showSection('about')">About</a><br>
+
+            <a href="#" onclick="showSection('courses')">Courses</a><br>
+
+            <a href="#" onclick="showSection('notes')">Notes</a><br>
+
+            <a href="#" onclick="showSection('contact')">Contact</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+
+            <p>📧 autocad3ddesignhub@gmail.com</p>
+
+            <p>
+                📺
+                <a href="https://youtube.com/@autocad__desgin__001?si=Wi8mZva3f7p_DXLB"
+                   target="_blank">
+                   YouTube Channel
+                </a>
+            </p>
+
+            <p>
+                💼
+                <a href="https://www.instagram.com/autocad__desgin__001__?igsh=MTQxcHhieDZ3ZWU2bg=="
+                   target="_blank">
+                   LinkedIn Profile
+                </a>
+            </p>
+            <p>
+                💼
+                <a href="https://www.instagram.com/autocad__desgin__001__?igsh=YXd6Njl5bWMxdGlk"
+                   target="_blank">
+                   Instagram
+                </a>
+            </p>
+            <p>
+                💼
+                <a href="https://www.facebook.com/share/18qffhmufh/"
+                   target="_blank">
+                   Facebook 
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 AutoCAD & 3D Design Hub.
+            All Rights Reserved.
+        </p>
+    </div>
+
+</footer>
+
+</body>
+</html>
