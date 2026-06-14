@@ -64,6 +64,13 @@ const transporter = nodemailer.createTransport({
     }
 
 });
+transporter.verify(function (error, success) {
+    if (error) {
+        console.log("MAIL ERROR:", error);
+    } else {
+        console.log("MAIL SERVER READY");
+    }
+});
 
 
 /* MIDDLEWARE */
