@@ -588,56 +588,44 @@ console.log(req.body);
 
 app.post("/contact", async (req, res) => {
 
+    console.log("BODY =", req.body);
+
     try {
 
-        const { name, email,phone, message } = req.body;
+        const { name, email, phone, message } = req.body;
 
-        // MongoDB me save
         const newContact = new Contact({
             name,
             email,
             phone,
             message
         });
+
         console.log("NEW CONTACT =", newContact);
 
         await newContact.save();
 
-        // Email send
         await transporter.sendMail({
-
             from: process.env.EMAIL_USER,
-
             to: process.env.EMAIL_USER,
-
             subject: "New Contact Form Message",
-
             html: `
-
                 <h2>New Contact Request</h2>
-
                 <p><b>Name:</b> ${name}</p>
-
                 <p><b>Email:</b> ${email}</p>
                 <p><b>Phone:</b> ${phone}</p>
-
                 <p><b>Message:</b> ${message}</p>
-
             `
         });
 
         res.send("Message Sent Successfully");
 
-    }
-
-    catch(error) {
+    } catch (error) {
 
         console.log(error);
-
         res.send("Error Sending Message");
 
     }
-
 });
 
 
