@@ -584,6 +584,7 @@ res.send("Lesson Added");
 
 
 // contact route...
+console.log(req.body);
 
 app.post("/contact", async (req, res) => {
 
@@ -595,6 +596,7 @@ app.post("/contact", async (req, res) => {
         const newContact = new Contact({
             name,
             email,
+            phone,
             message
         });
 
