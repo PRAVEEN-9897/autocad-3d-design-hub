@@ -216,6 +216,56 @@ button{
     margin: 0 auto;
 }
 
+
+
+/* course */
+
+.courses{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.course-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.course-card{
+    width: 320px;
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.course-card:hover{
+    transform: translateY(-8px);
+}
+
+.course-card h3{
+    margin-bottom: 15px;
+}
+
+.course-card button{
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 #projects h2{
     text-align:center;
     font-size:40px;
@@ -250,6 +300,9 @@ button{
 
     border-radius:10px;
 }
+
+
+
 
 
 
