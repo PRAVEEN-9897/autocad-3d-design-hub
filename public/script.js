@@ -15,46 +15,46 @@ function showSection(sectionId){
 
 /* CONTACT FORM */
 
-// const contactForm = document.getElementById("contactForm");
+const contactForm = document.getElementById("contactForm");
 
-// contactForm.addEventListener("submit", async function(e){
+contactForm.addEventListener("submit", async function(e){
 
-//     e.preventDefault();
+    e.preventDefault();
 
-//     const formData = new FormData(contactForm);
+    const formData = new FormData(contactForm);
     
 
-//     const data = {
+    const data = {
 
-//         name: formData.get("name"),
+        name: formData.get("name"),
 
-//         email: formData.get("email"),
-//         phone: formData.get("phone"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
 
-//         message: formData.get("message")
+        message: formData.get("message")
 
-//     };
+    };
     
 
-//     const response = await fetch("/contact", {
+    const response = await fetch("/contact", {
 
-//         method:"POST",
+        method:"POST",
 
-//         headers:{
-//             "Content-Type":"application/json"
-//         },
+        headers:{
+            "Content-Type":"application/json"
+        },
 
-//         body:JSON.stringify(data)
+        body:JSON.stringify(data)
 
-//     });
+    });
 
-//     const result = await response.text();
+    const result = await response.text();
 
-//     alert(result);
+    alert(result);
 
-//     contactForm.reset();
+    contactForm.reset();
 
-// });
+});
 
 async function loadNotes() {
 
