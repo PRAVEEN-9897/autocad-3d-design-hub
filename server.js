@@ -584,14 +584,6 @@ await Course.updateOne(
                 videoLink:"https://www.youtube.com/embed/-UJ_o9hfQ7w"
                 
                 
-            },
-            {
-                title:"Project 10",
-                description:"AutoCAD Tutorial For Beginners Modify Toolbar Explained in Hindi (Part-1)",
-                videoLink:"https://www.youtube.com/embed/ZoJ0vYWRST4"
-              
-                
-                
             }
             ]
 
