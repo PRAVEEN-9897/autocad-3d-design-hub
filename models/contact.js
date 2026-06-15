@@ -1,18 +1,4 @@
 
-
-console.log("CONTACT JS LOADED");
-contactForm.addEventListener("submit", async function(e){
-
-    e.preventDefault();
-
-    alert("FORM SUBMITTED");
-
-});
-
-
-
-
-
 const mongoose = require("mongoose");
 
 const contactSchema = new mongoose.Schema({
