@@ -611,13 +611,7 @@ res.send("Lesson Added");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.post("/contact", async (req, res) => {
 
-    console.log("BODY =", req.body);
-
-    res.send(JSON.stringify(req.body));
-
-});
 
 app.post("/contact", async (req, res) => {
 
