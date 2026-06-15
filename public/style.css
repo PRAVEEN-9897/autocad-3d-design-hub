@@ -70,6 +70,12 @@ nav a:hover{
     color:#38bdf8;
 }
 
+
+/* toggle */
+.menu-toggle{
+    display:none;
+}
+
 /* SECTION CONTROL */
 
 .section{
@@ -484,6 +490,24 @@ textarea{
     nav a{
         display:block;
         margin:10px 0;
+    }
+     .menu-toggle{
+        display:block;
+        font-size:30px;
+        color:white;
+        cursor:pointer;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        text-align:center;
+        background:#111;
+    }
+
+    .nav-links.active{
+        display:flex;
     }
 
     .hero h1{
