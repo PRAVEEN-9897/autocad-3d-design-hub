@@ -500,7 +500,7 @@ textarea{
 
     .nav-links{
         display:none;
-        flex-direction:column;
+        flex-direction:row-reverse;
         width:100%;
         text-align:center;
         background:#111;
